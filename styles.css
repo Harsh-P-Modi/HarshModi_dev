@@ -27,13 +27,21 @@ body {
 
 .products {
   display: flex;
-  gap: 10px;
+  gap: 20px;
+  align-items: stretch; 
 }
+
 .card {
+  flex: 1; 
   border: 1px solid #ccc;
   padding: 10px;
-  max-height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
 }
+
 
 
 .products .card img {
@@ -46,14 +54,25 @@ body {
 
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   background: #222;
   color: white;
   text-align: center;
   padding: 10px;
 }
+body {
+  padding-bottom: 50px; 
+}
+.products, form {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+
+
 
 
 input, textarea {
